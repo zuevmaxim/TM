@@ -1,0 +1,11 @@
+version: '3'
+services:
+  server:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: jupyter-server
+    volumes:
+      - /Users/Maksim.Zuev/PycharmProjects/TopicModeling:/app
+    ports:
+      - "8889:8889"
